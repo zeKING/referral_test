@@ -6,18 +6,29 @@
 
 #### В этом файле заполните `ALGORITHM` (например HS256) и `SECRET_KEY` (любой набор символов).
 
-### По очереди запускаем команды:
+### Открываем терминал в корневой папке и по очереди запускаем команды:
 
 #### 1.
-#### `py manage.py migrate`
+#### Windows: `py -m venv venv`
+#### MacOS/Linux: `python3 -m venv venv`
 
-#### 2. 
-#### `py seeder.py`
+#### 2.
+#### Windows: `venv\Scripts\activate`
+#### MacOS/Linux: `source venv/bin/activate`
 
 #### 3.
-#### `py seeder.py`
+#### `pip install -r req.txt`
 
 #### 4.
+#### `py manage.py migrate`
+
+#### 5. 
+#### `py seeder.py`
+
+#### 6.
+#### `py seeder.py`
+
+#### 7.
 #### `py manage.py runserver`
 
 ### После запуска сервера, в браузере открываем страницу swagger-документации и тестируем :)
